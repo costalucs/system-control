@@ -1,0 +1,10 @@
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('João Silva', 'joao.silva@email.com', TRUE, '2024-01-10', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Maria Oliveira', 'maria.oliveira@email.com', FALSE, '2024-02-15', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Carlos Souza', 'carlos.souza@email.com', TRUE, '2024-03-20', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Ana Santos', 'ana.santos@email.com', TRUE, '2024-04-25', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Pedro Rocha', 'pedro.rocha@email.com', FALSE, '2024-05-30', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Juliana Costa', 'juliana.costa@email.com', TRUE, '2024-06-05', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Lucas Mendes', 'lucas.mendes@email.com', FALSE, '2024-07-10', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Fernanda Lima', 'fernanda.lima@email.com', TRUE, '2024-08-15', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Ricardo Alves', 'ricardo.alves@email.com', TRUE, '2024-09-20', 'A');
+INSERT INTO tb_user (nome, email, pagamento, dataMatricula, turma) VALUES ('Tatiane Ferreira', 'tatiane.ferreira@email.com', FALSE, '2024-10-25', 'A');
