@@ -49,14 +49,7 @@ public class UserService {
     }
 
     private UserDTO convertToDTO(User user) {
-        UserDTO userDTO = new UserDTO();
-        userDTO.setId(user.getId());
-        userDTO.setNome(user.getNome());
-        userDTO.setEmail(user.getEmail());
-        userDTO.setPagamento(user.isPagamento());
-        userDTO.setRegistrationDate(user.getDataMatricula());
-        userDTO.setTimeSinceRegistration(user.getTimeSinceRegistration());
-        userDTO.setTurma(user.getTurma());
+        UserDTO userDTO = new UserDTO(user);
         return userDTO;
     }
 }

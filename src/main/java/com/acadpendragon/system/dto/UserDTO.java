@@ -1,5 +1,8 @@
 package com.acadpendragon.system.dto;
 
+import com.acadpendragon.system.entities.User;
+import org.springframework.beans.BeanUtils;
+
 import java.time.LocalDate;
 
 public class UserDTO {
@@ -11,6 +14,10 @@ public class UserDTO {
     private LocalDate registrationDate;
     private Integer timeSinceRegistration;
     private String turma;
+
+    public UserDTO(User user) {
+        BeanUtils.copyProperties(user, this);
+    }
 
     // Getters and Setters
     public Long getId() {
