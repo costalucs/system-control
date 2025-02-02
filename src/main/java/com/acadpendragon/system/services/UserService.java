@@ -19,7 +19,6 @@ public class UserService {
     private UserRepository userRepository;
 
     public List<UserDTO> getAllUsers() {
-        System.out.println(userRepository.findAll());
         return userRepository.findAll().stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());

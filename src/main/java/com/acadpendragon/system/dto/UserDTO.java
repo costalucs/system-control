@@ -11,8 +11,8 @@ public class UserDTO {
     private String nome;
     private String email;
     private boolean pagamento;
-    private LocalDate registrationDate;
-    private Integer timeSinceRegistration;
+    private LocalDate dataMatricula;
+    private long timeSinceRegistration;
     private String turma;
 
     public UserDTO(User user) {
@@ -52,19 +52,11 @@ public class UserDTO {
         this.pagamento = pagamento;
     }
 
-    public LocalDate getRegistrationDate() {
-        return registrationDate;
-    }
-
-    public void setRegistrationDate(LocalDate registrationDate) {
-        this.registrationDate = registrationDate;
-    }
-
-    public Integer getTimeSinceRegistration() {
+    public long getTimeSinceRegistration() {
         return timeSinceRegistration;
     }
 
-    public void setTimeSinceRegistration(Integer timeSinceRegistration) {
+    public void setTimeSinceRegistration(long timeSinceRegistration) {
         this.timeSinceRegistration = timeSinceRegistration;
     }
 
@@ -75,4 +67,13 @@ public class UserDTO {
     public void setTurma(String turma) {
         this.turma = turma;
     }
+
+    public LocalDate getDataMatricula() {
+        return dataMatricula;
+    }
+
+    public void setDataMatricula(LocalDate dataMatricula) {
+        this.dataMatricula = dataMatricula;
+    }
+
 }

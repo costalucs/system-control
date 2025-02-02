@@ -2,7 +2,7 @@ package com.acadpendragon.system.entities;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
-import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 @Entity
 @Table(name = "tb_user")
@@ -21,7 +21,7 @@ public class User {
     private String turma;
 
     @Transient
-    private Integer timeSinceRegistration;
+    private long timeSinceRegistration;
 
     public Long getId() {
         return id;
@@ -71,8 +71,9 @@ public class User {
         this.turma = turma;
     }
 
-    public Integer getTimeSinceRegistration() {
-        return Period.between(this.dataMatricula, LocalDate.now()).getDays();
+    public long getTimeSinceRegistration() {
+        long time = ChronoUnit.DAYS.between(this.dataMatricula, LocalDate.now());
+        return time;
     }
 
     public void setTimeSinceRegistration(Integer timeSinceRegistration) {

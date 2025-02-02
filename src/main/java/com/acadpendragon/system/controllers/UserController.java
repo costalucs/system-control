@@ -24,7 +24,7 @@ public class UserController {
         return userService.getUserById(id);
     }
 
-    @GetMapping("/payment/false")
+    @GetMapping("/pagamento/false")
     public List<UserDTO> getUsersWithPaymentFalse() {
         return userService.getUsersWithPaymentFalse();
     }
