@@ -48,7 +48,6 @@ public class UserService {
     }
 
     private UserDTO convertToDTO(User user) {
-        UserDTO userDTO = new UserDTO(user);
-        return userDTO;
+        return new UserDTO(user);
     }
 }

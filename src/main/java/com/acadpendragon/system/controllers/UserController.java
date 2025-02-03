@@ -4,11 +4,13 @@ import com.acadpendragon.system.dto.UserDTO;
 import com.acadpendragon.system.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/users")
+@CrossOrigin(origins = "*") // Permite todas as origens (não recomendado para produção)
 public class UserController {
 
     @Autowired
